@@ -1,0 +1,14 @@
+self: play -> hitlogger 0.1
+
+require:
+    - play
+    - commons-dbcp -> commons-dbcp 1.4
+    - commons-pool -> commons-pool 1.6
+    - org.sql2o -> sql2o 1.0.2
+
+repositories:
+    - jboss:
+        type: iBiblio
+        root: "https://raw.github.com/aaberg/aaberg_mvn_repo/master/"
+        contains:
+            - org.sql2o -> *
